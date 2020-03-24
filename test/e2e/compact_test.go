@@ -35,7 +35,6 @@ func TestCompact(t *testing.T) {
 
 	l := log.NewLogfmtLogger(os.Stdout)
 
-	// blockDesc describes a recipe to generate blocks from the given series and external labels.
 	type blockDesc struct {
 		series           []labels.Labels
 		extLset          labels.Labels
